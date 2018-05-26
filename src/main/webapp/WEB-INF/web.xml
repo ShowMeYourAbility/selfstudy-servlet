@@ -12,4 +12,13 @@
 		<servlet-name>hi</servlet-name>
 		<url-pattern>/sayHi</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>para</servlet-name>
+		<servlet-class>com.llmcu.selfstudy.servlet.TestParameter</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>para</servlet-name>
+		<url-pattern>/testParameter</url-pattern>
+	</servlet-mapping>
 </web-app>

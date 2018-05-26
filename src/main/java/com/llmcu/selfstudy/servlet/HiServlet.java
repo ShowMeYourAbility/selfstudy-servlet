@@ -13,7 +13,7 @@ public class HiServlet extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		PrintWriter out = res.getWriter();
-		out.print("<h1>hi servlet</h1>");
+		out.print("<h1>hi servlet1</h1>");
 	}
 
 }

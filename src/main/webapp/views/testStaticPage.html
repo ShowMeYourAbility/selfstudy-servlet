@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<!-- **************************************************** -->
+<!-- **************************************************** -->
+<!-- 静态页面的访问方式是：http://localhost:9182/selfstudy-servlet/views/testStaticPage.html -->
+<!-- form表单action地址的写法为：/webroot/url-pattern -->
+<!-- **************************************************** -->
+<!-- **************************************************** -->
+
+<form id="form1" name="form1" method="post" action="/servlet/testParameter">
+  用户名：<input type="text" name="username" id="username" /><br/>
+  密&nbsp;&nbsp;码：<input type="text" name="pwd" id="pwd" /><br />
+  性&nbsp;&nbsp;别：男<input type="radio" name="gender" value="M" id="gender_0" />女<input type="radio" name="gender" value="F" id="gender_1" /><br/>
+  爱&nbsp;&nbsp;好：运动<input type="checkbox" name="hobby" value="sport" />工作<input type="checkbox" name="hobby" value="work" />旅游<input type="checkbox" name="hobby" value="travel" /><br/>
+  学&nbsp;&nbsp;历：
+  <select name="education" size="4" multiple="multiple" id="education">
+    <option value="0">幼儿园</option>
+    <option value="1">小学</option>
+    <option value="2">初中</option>
+    <option value="3">高中</option>
+    <option value="4">大学</option>
+    <option value="5">硕士</option>
+    <option value="6">博士</option>
+  </select><br/>
+  <input type="submit" name="submit" id="submit" value="提交" />
+</form>
+</body>
+</html>
