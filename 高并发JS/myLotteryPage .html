@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery-1.8.3.min.js?v=${appVersion.getCurrentVersion()}"></script>
+</head>
+<body>
+<h1>this is myPage</h1>
+<input type="button" value="click me" id="btn" />
+<input type="button" value="click me2" id="btn2" />
+<script>
+var flag = false;
+$("#btn2").click(function(){flag=true});
+$("#btn").click(
+		function(){
+				var date = new Date();
+				window.setTimeout(function mySend(){
+					window.setInterval(function(){
+						$.ajax({
+							async:true,
+							timeout:3000,
+							dataType:"jsonp",
+							type:"post",
+							data:"tid=1595",
+							url:"http://localhost:9180/member/member/task/award.json",
+							contentType:"application/json",
+							success:function(msg){
+								//console.log(msg);
+							}
+						});	
+						
+					},1);
+						
+				}
+				,10000-date.getTime()%10000);
+		}		
+);
+$("#btn").click();
+
+
+</script>
+</body>
+</html>

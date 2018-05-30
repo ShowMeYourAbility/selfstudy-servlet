@@ -21,4 +21,17 @@
 		<servlet-name>para</servlet-name>
 		<url-pattern>/testParameter</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>testServletConfig</servlet-name>
+		<servlet-class>com.llmcu.selfstudy.servlet07servletconfig.TestServletConfig</servlet-class>
+		<init-param>
+			<param-name>maxOnline</param-name>
+			<param-value>433</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>testServletConfig</servlet-name>
+		<url-pattern>/testServletConfig</url-pattern>
+	</servlet-mapping>
 </web-app>
